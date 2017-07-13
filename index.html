@@ -7,7 +7,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
+
 <body>
+    <h1>Baron Powerplay Calculator</h1>
 
     <h2>Equipo con baron</h2>
     <label>Oro inicial:</label><br/>
@@ -21,8 +23,11 @@
     <label>Oro al acabar el baron:</label><br/>
     <textarea id="oa"></textarea>
     <button id="send">send</button>
-    <pre id="messages"></pre>
     <style>
+        * {
+            color: white;
+        }
+
         body {
             background-image: url("http://vignette3.wikia.nocookie.net/leagueoflegends/images/1/15/Baron_Nashor_OriginalSkin.jpg");
         }
@@ -30,14 +35,15 @@
 </body>
 <script>
     document.getElementById('send').addEventListener('click', function () {
-    var boi = document.getElementById('boi').value
-    var boa = document.getElementById('boa').value
-    var oi = document.getElementById('oi').value
-    var oa = document.getElementById('oa').value
+        var boi = document.getElementById('boi').value
+        var boa = document.getElementById('boa').value
+        var oi = document.getElementById('oi').value
+        var oa = document.getElementById('oa').value
 
-    var gananciasA = boa - boi;
-    var gananciasB = oa - oi;
-    var total = gananciasA  - gananciasB;
-    alert(total);
+        var gananciasA = boa - boi;
+        var gananciasB = oa - oi;
+        var total = gananciasA - gananciasB;
+        alert(total);
     });
+
 </script>
